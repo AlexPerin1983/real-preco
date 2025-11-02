@@ -43,23 +43,6 @@ const ProductList: React.FC<ProductListProps> = ({ onSelectCategory }) => {
 
   const orderedCategories = Object.keys(filteredAndGroupedProducts);
 
-  // Define the special sections as renderable chunks
-  const dailyDealsSection = (
-    <section key="daily-deals">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">Ofertas do Dia</h2>
-      <div 
-        className="flex gap-4 overflow-x-auto pb-4 -mx-2 px-2 no-scrollbar"
-      >
-        <style>{`.no-scrollbar::-webkit-scrollbar { display: none; }`}</style>
-        {DAILY_DEALS.map(product => (
-          <div key={product.id} className="w-40 flex-shrink-0">
-            <ProductCard product={product} />
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-
   const mostPurchasedSection = (
     <section key="most-purchased">
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Mais Comprados</h2>
@@ -100,17 +83,11 @@ const ProductList: React.FC<ProductListProps> = ({ onSelectCategory }) => {
   if (orderedCategories.length > 0) {
     componentsToRender.push(...orderedCategories.slice(0, 2).map(renderCategorySection));
     
-    if (DAILY_DEALS.length > 0) {
-      componentsToRender.push(dailyDealsSection);
-    }
-    
-    componentsToRender.push(...orderedCategories.slice(2, 4).map(renderCategorySection));
-
     if (MOST_PURCHASED_PRODUCTS.length > 0) {
       componentsToRender.push(mostPurchasedSection);
     }
     
-    componentsToRender.push(...orderedCategories.slice(4).map(renderCategorySection));
+    componentsToRender.push(...orderedCategories.slice(2).map(renderCategorySection));
   }
 
   return (
@@ -128,6 +105,22 @@ const ProductList: React.FC<ProductListProps> = ({ onSelectCategory }) => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
         </div>
+
+        {DAILY_DEALS.length > 0 && (
+          <section key="daily-deals">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">🔥 Ofertas do Dia</h2>
+            <div 
+              className="flex gap-4 overflow-x-auto pb-4 -mx-2 px-2 no-scrollbar"
+            >
+              <style>{`.no-scrollbar::-webkit-scrollbar { display: none; }`}</style>
+              {DAILY_DEALS.map(product => (
+                <div key={product.id} className="w-40 flex-shrink-0">
+                  <ProductCard product={product} />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         <CategoryNav onCategorySelect={onSelectCategory} />
         
