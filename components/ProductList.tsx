@@ -110,7 +110,7 @@ const ProductList: React.FC<ProductListProps> = ({ onSelectCategory }) => {
 
         {DAILY_DEALS.length > 0 && (
           <section key="daily-deals">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">🔥 Ofertas do Dia</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Ofertas do Dia</h2>
             <div 
               className="flex gap-4 overflow-x-auto pb-4 -mx-2 px-2 no-scrollbar"
             >
