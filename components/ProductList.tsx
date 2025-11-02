@@ -106,6 +106,8 @@ const ProductList: React.FC<ProductListProps> = ({ onSelectCategory }) => {
             </svg>
         </div>
 
+        <CategoryNav onCategorySelect={onSelectCategory} />
+
         {DAILY_DEALS.length > 0 && (
           <section key="daily-deals">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">🔥 Ofertas do Dia</h2>
@@ -121,8 +123,6 @@ const ProductList: React.FC<ProductListProps> = ({ onSelectCategory }) => {
             </div>
           </section>
         )}
-
-        <CategoryNav onCategorySelect={onSelectCategory} />
         
         {orderedCategories.length > 0 ? (
           <div className="space-y-10">
