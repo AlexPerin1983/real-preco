@@ -54,7 +54,7 @@ export const CATEGORY_DETAILS: Record<string, { imageUrl: string }> = {
 
 export const PRODUCTS: Product[] = [
   // Hortifruti
-  { id: 1, name: 'Maçã Verde', price: 9.50, description: 'Saborosas e crocantes, por kg.', category: 'Hortifruti', subcategory: 'Frutas', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202510201153_3a8k644uczx.jpeg?imwidth=256' },
+  { id: 1, name: 'Maçã Verde', price: 9.50, originalPrice: 11.20, description: 'Saborosas e crocantes, por kg.', category: 'Hortifruti', subcategory: 'Frutas', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202510201153_3a8k644uczx.jpeg?imwidth=256' },
   { id: 11, name: 'Tomate Italiano', price: 7.20, description: 'Tomates frescos, por kg.', category: 'Hortifruti', subcategory: 'Legumes', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202306022246_lxzlbd8kajh.jpg?imwidth=256' },
   { id: 13, name: 'Banana Prata', price: 6.99, description: 'Cacho com aprox. 1kg.', category: 'Hortifruti', subcategory: 'Frutas', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202309181056_5ziumvv5z3i.jpg?imwidth=256' },
   { id: 14, name: 'Alface Americana', price: 4.50, description: 'Unidade fresca.', category: 'Hortifruti', subcategory: 'Verduras', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202407231110_9625inu1s46.png?imwidth=256' },
@@ -117,7 +117,7 @@ export const PRODUCTS: Product[] = [
   { id: 421, name: 'Torta de Limão (Fatia)', price: 9.90, description: 'Fatia generosa.', category: 'Padaria', subcategory: 'Bolos e Tortas', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202202281041_kfkx8re7vlh.jpg?imwidth=256' },
   { id: 422, name: 'Torta de Frango (Fatia)', price: 10.50, description: 'Fatia generosa.', category: 'Padaria', subcategory: 'Bolos e Tortas', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202202231834_jcmjhjv8j7i.jpg?imwidth=256' },
   { id: 423, name: 'Esfiha de Carne', price: 6.50, description: 'Unidade.', category: 'Padaria', subcategory: 'Salgados', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210180829_lko9fcinw6a.jpg?imwidth=256' },
-  { id: 424, name: 'Coxinha de Frango', price: 7.50, description: 'Unidade.', category: 'Padaria', subcategory: 'Salgados', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202510031858_p1y4j4zh90e.jpeg?imwidth=256' },
+  { id: 424, name: 'Coxinha de Frango', price: 7.50, originalPrice: 8.90, description: 'Unidade.', category: 'Padaria', subcategory: 'Salgados', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202510031858_p1y4j4zh90e.jpeg?imwidth=256' },
   { id: 425, name: 'Enroladinho de Salsicha', price: 6.00, description: 'Unidade.', category: 'Padaria', subcategory: 'Salgados', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210180829_ajo1geprsdo.jpg?imwidth=256' },
   { id: 426, name: 'Sonho de Creme', price: 5.50, description: 'Unidade.', category: 'Padaria', subcategory: 'Doces', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202506101156_cw2wqv9s0ej.jpeg?imwidth=256' },
   { id: 427, name: 'Pudim de Leite (Fatia)', price: 8.90, description: 'Fatia generosa.', category: 'Padaria', subcategory: 'Doces', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202510301643_3ncnz3z8emt.jpeg?imwidth=256' },
@@ -134,7 +134,7 @@ export const PRODUCTS: Product[] = [
   { id: 507, name: 'Cream Cheese Philadelphia', price: 10.50, description: 'Pote com 150g.', category: 'Frios e Laticínios', subcategory: 'Requeijões e Cremes', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202410181524_jad9ssrg3ai.jpeg?imwidth=256' },
   { id: 508, name: 'Manteiga com Sal', price: 11.80, description: 'Pote com 200g.', category: 'Frios e Laticínios', subcategory: 'Manteigas e Margarinas', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202307052254_y1su8utkef.jpg?imwidth=256' },
   { id: 509, name: 'Margarina com Sal', price: 6.50, description: 'Pote com 500g.', category: 'Frios e Laticínios', subcategory: 'Manteigas e Margarinas', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202510031807_5fz1gbdhz4x.jpeg?imwidth=256' },
-  { id: 510, name: 'Leite Integral UHT', price: 4.79, description: 'Caixa de 1 litro.', category: 'Frios e Laticínios', subcategory: 'Leites', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202510031438_4wpox9wi4de.jpeg?imwidth=256' },
+  { id: 510, name: 'Leite Integral UHT', price: 4.79, originalPrice: 5.50, description: 'Caixa de 1 litro.', category: 'Frios e Laticínios', subcategory: 'Leites', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202510031438_4wpox9wi4de.jpeg?imwidth=256' },
   { id: 511, name: 'Leite Desnatado UHT', price: 4.99, description: 'Caixa de 1 litro.', category: 'Frios e Laticínios', subcategory: 'Leites', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202211301605_rsqrccil3m.jpg?imwidth=256' },
   { id: 512, name: 'Leite Fermentado Yakult', price: 5.90, description: 'Pack com 6 unidades.', category: 'Frios e Laticínios', subcategory: 'Iogurtes', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182227_hzyp8i03rh4.jpg?imwidth=256' },
   { id: 513, name: 'Iogurte Grego Tradicional', price: 4.20, description: 'Copo com 100g.', category: 'Frios e Laticínios', subcategory: 'Iogurtes', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202510042306_80qwikpdkmt.jpeg?imwidth=256' },
@@ -148,4 +148,17 @@ export const PRODUCTS: Product[] = [
   { id: 521, name: 'Peito de Peru Fatiado', price: 12.90, description: 'Bandeja com 180g.', category: 'Frios e Laticínios', subcategory: 'Frios', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202510042211_v821np07dxc.jpeg?imwidth=256' },
   { id: 522, name: 'Salame Italiano Fatiado', price: 16.80, description: 'Bandeja com 100g.', category: 'Frios e Laticínios', subcategory: 'Frios', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202501221425_m5qx45j3f9.jpeg?imwidth=256' },
   { id: 523, name: 'Mortadela Defumada Fatiada', price: 6.90, description: 'Bandeja com 200g.', category: 'Frios e Laticínios', subcategory: 'Frios', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202307060035_2knn53qsuvx.jpg?imwidth=256' },
-  { id: 524, name: 'Creme de Ricota', price: 8.50, description: 'Pote com 200g.', category: 'Frios e Laticínios', subcategory: 'Requeij
+  { id: 524, name: 'Creme de Ricota', price: 8.50, description: 'Pote com 200g.', category: 'Frios e Laticínios', subcategory: 'Requeijões e Cremes', imageUrl: 'https://static.ifood-static.com.br/image/upload/t_low/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202402201220_cr590wrexwq.jpeg?imwidth=256' },
+];
+
+export const DAILY_DEALS: Product[] = PRODUCTS.filter(p => p.originalPrice).slice(0, 10);
+
+export const MOST_PURCHASED_PRODUCTS: Product[] = [
+    PRODUCTS.find(p => p.id === 2)!, // Pão Francês
+    PRODUCTS.find(p => p.id === 13)!, // Banana Prata
+    PRODUCTS.find(p => p.id === 11)!, // Tomate Italiano
+    PRODUCTS.find(p => p.id === 510)!, // Leite Integral UHT
+    PRODUCTS.find(p => p.id === 502)!, // Queijo Mussarela Fatiado
+    PRODUCTS.find(p => p.id === 402)!, // Pão de Forma
+    PRODUCTS.find(p => p.id === 326)!, // Cebola
+].filter(Boolean); // Filter out any potential undefined values
