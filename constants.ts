@@ -1,7 +1,6 @@
 import { Product } from './types';
 
 export const CATEGORIES = [
-  {id: 'ofertas', name: 'Ofertas'},
   {id: 'mercearia', name: 'Mercearia'},
   {id: 'hortifruti', name: 'Hortifruti'},
   {id: 'carnes', name: 'Carnes'},
@@ -27,7 +26,6 @@ export const CATEGORIES = [
 ];
 
 export const CATEGORY_DETAILS: Record<string, { imageUrl: string }> = {
-  'Ofertas': { imageUrl: 'https://i.imgur.com/2s42s8s.png' },
   'Mercearia': { imageUrl: 'https://static.ifood-static.com.br/image/upload//mercados/categorias/basicos.png' },
   'Hortifruti': { imageUrl: 'https://static.ifood-static.com.br/image/upload//mercados/categorias/feira.png' },
   'Carnes': { imageUrl: 'https://static.ifood-static.com.br/image/upload//mercados/categorias/carne.png' },

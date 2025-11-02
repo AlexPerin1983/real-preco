@@ -6,19 +6,11 @@ interface CategoryNavProps {
 }
 
 const CategoryNav: React.FC<CategoryNavProps> = ({ onCategorySelect }) => {
-    // Move 'Ofertas' to the beginning
-    const sortedCategories = [...CATEGORIES].sort((a, b) => {
-        if (a.name === 'Ofertas') return -1;
-        if (b.name === 'Ofertas') return 1;
-        return 0;
-    });
-
-
     return (
         <nav>
             <div className="flex gap-3 overflow-x-auto pb-2 -mx-2 px-2 no-scrollbar">
                 <style>{`.no-scrollbar::-webkit-scrollbar { display: none; }`}</style>
-                {sortedCategories.map(category => {
+                {CATEGORIES.map(category => {
                     const details = CATEGORY_DETAILS[category.name];
                     
                     if (!details?.imageUrl) return null;
